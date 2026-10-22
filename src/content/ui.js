@@ -21,6 +21,11 @@ export const ui = {
   sections: {
     about: { es: "Sobre mí", en: "About me" },
     aboutTitle: { es: "Investigo, sintetizo y diseño.", en: "I research, synthesize and design." },
+    // Saludo de «Sobre mí»: accent va en Playfair cursiva
+    aboutHello: {
+      es: { hello: "¡Hola! Soy Daniela", accent: "Diseñadora de Producto" },
+      en: { hello: "Hi! I'm Daniela", accent: "Product Designer" },
+    },
     experience: { es: "Trayectoria", en: "Experience" },
     experienceTitle: { es: "Mi trayectoria", en: "My path so far" },
     projects: { es: "Proyectos", en: "Projects" },

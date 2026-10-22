@@ -35,5 +35,15 @@ export const profile = {
   ],
   tools: [{ es: "Suite de Adobe", en: "Adobe Suite" }, { es: "Figma", en: "Figma" }, { es: "Next.js", en: "Next.js" }],
   languages: [{ es: "Inglés B1", en: "English B1" }],
-  showPhoto: false,
+  // Foto de «Sobre mí»: PNG con fondo transparente, estrella y degradado rosa incluidos.
+  photo: {
+    png: "/images/sobre-mi/daniela.png",
+    webp: "/images/sobre-mi/daniela.webp", // misma imagen, WebP sin pérdida (más liviana)
+    width: 1375,
+    height: 1500,
+    alt: {
+      es: "Daniela Rojas sonriendo, en blanco y negro, con una estrella amarilla detrás.",
+      en: "Daniela Rojas smiling, in black and white, with a yellow star behind her.",
+    },
+  },
 }
