@@ -32,7 +32,7 @@ export default function Hero() {
   const reduce = useReducedMotion()
   const h = profile.headline[lang]
   const note = insights.find((n) => n.id === "moshoo-estres")
-  const cases = projects.filter((p) => p.kind === "case")
+  const featured = projects.slice(0, 3)
 
   return (
     <section aria-labelledby="hero-title" className="px-3 pt-6 md:px-4">
@@ -75,7 +75,7 @@ export default function Hero() {
           <div className={card}>
             <p className="mb-3 text-xs text-ink-soft">{t(ui.sections.projects)}</p>
             <ul className="grid gap-2">
-              {cases.map((p, i) => (
+              {featured.map((p, i) => (
                 <li key={p.slug} className="flex items-center gap-2 text-sm font-semibold">
                   <span className={`size-2 rounded-full ${["bg-rose", "bg-butter", "bg-sage"][i % 3]}`} />
                   {p.title}

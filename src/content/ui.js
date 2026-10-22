@@ -38,15 +38,14 @@ export const ui = {
   projects: {
     list: { es: "Lista", en: "List" },
     cards: { es: "Tarjetas", en: "Cards" },
-    viewCase: { es: "Ver caso", en: "View case" },
     hint: { es: "Sigue bajando para recorrerlos", en: "Keep scrolling to browse" },
     behance: { es: "Ver en Behance", en: "View on Behance" },
   },
   contact: {
     title: { es: "¿Hablamos?", en: "Let's talk?" },
     text: {
-      es: "Busco práctica en UX/UI. Escríbeme y conversemos sobre tu equipo y tu producto.",
-      en: "I'm looking for a UX/UI internship. Write to me and let's talk about your team and product.",
+      es: "Diseño experiencias digitales que conectan con los usuarios y potencian tu negocio. Escríbeme y conversemos sobre tu próximo proyecto.",
+      en: "I design digital experiences that connect with users and boost your business. Write to me and let's talk about your next project.",
     },
     copy: { es: "Copiar correo", en: "Copy email" },
     copied: { es: "Correo copiado", en: "Email copied" },
@@ -54,24 +53,6 @@ export const ui = {
   footer: {
     top: { es: "Volver arriba", en: "Back to top" },
   },
-  caseStudy: {
-    back: { es: "Volver a proyectos", en: "Back to projects" },
-    role: { es: "Rol", en: "Role" },
-    year: { es: "Año", en: "Year" },
-    team: { es: "Equipo", en: "Team" },
-    tools: { es: "Herramientas", en: "Tools" },
-    client: { es: "Cliente", en: "Client" },
-    summary: { es: "Resumen", en: "Summary" },
-    context: { es: "Contexto y problema", en: "Context and problem" },
-    objectives: { es: "Objetivos", en: "Goals" },
-    roleTeam: { es: "Rol y equipo", en: "Role and team" },
-    research: { es: "Investigación", en: "Research" },
-    insights: { es: "Insights y definición", en: "Insights and definition" },
-    design: { es: "Ideación y diseño", en: "Ideation and design" },
-    validation: { es: "Validación y resultados", en: "Validation and results" },
-    learnings: { es: "Aprendizajes", en: "Learnings" },
-    next: { es: "Siguiente caso", en: "Next case" },
-    pending: { es: "Contenido pendiente", en: "Content pending" },
-  },
   notFound: { es: "Esta página no existe.", en: "This page doesn't exist." },
+  backHome: { es: "Volver al inicio", en: "Back to home" },
 }

@@ -41,7 +41,7 @@ export default function Skills() {
       <Reveal className="mt-10">
         <h3 className="mb-4 text-sm font-semibold tracking-normal text-ink-soft">{t(ui.sections.tools)}</h3>
         <ul className="flex flex-wrap gap-2">
-          {[...profile.tools, ...profile.languages.map(t)].map((tool) => (
+          {[...profile.languages, ...profile.tools].map(t).map((tool) => (
             <li key={tool} className="rounded-full border border-border bg-surface px-4 py-2 text-sm">
               {tool}
             </li>

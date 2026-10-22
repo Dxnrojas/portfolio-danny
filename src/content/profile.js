@@ -33,7 +33,7 @@ export const profile = {
     { es: "Liderazgo e influencia social", en: "Leadership and social influence" },
     { es: "Diseño y programación de tecnología", en: "Technology design and programming" },
   ],
-  tools: ["Figma", "Adobe Suite", "HTML", "CSS", "JavaScript"],
-  languages: [{ es: "Inglés A2", en: "English A2" }],
+  tools: [{ es: "Suite de Adobe", en: "Adobe Suite" }, { es: "Figma", en: "Figma" }, { es: "Next.js", en: "Next.js" }],
+  languages: [{ es: "Inglés B1", en: "English B1" }],
   showPhoto: false,
 }

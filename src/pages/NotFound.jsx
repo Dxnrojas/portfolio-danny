@@ -9,7 +9,7 @@ export default function NotFound() {
       <h1 className="text-5xl">404</h1>
       <p className="mt-4 text-ink-soft">{t(ui.notFound)}</p>
       <Link to="/" className="mt-8 inline-flex min-h-11 items-center rounded-full bg-ink px-6 font-semibold text-surface">
-        {t(ui.caseStudy.back)}
+        {t(ui.backHome)}
       </Link>
     </div>
   )

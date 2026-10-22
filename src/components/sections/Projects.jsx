@@ -1,5 +1,4 @@
 import { useLayoutEffect, useRef, useState } from "react"
-import { Link } from "react-router"
 import { motion, useMotionValueEvent, useReducedMotion, useScroll, useTransform } from "motion/react"
 import { useLang } from "../../i18n/language.jsx"
 import { ui } from "../../content/ui.js"
@@ -7,6 +6,7 @@ import { profile } from "../../content/profile.js"
 import { projects } from "../../content/projects.js"
 import { useMediaQuery } from "../../lib/useMediaQuery.js"
 import ImagePlaceholder from "../ui/ImagePlaceholder.jsx"
+import ProjectImage from "../ui/ProjectImage.jsx"
 import Reveal from "../ui/Reveal.jsx"
 
 const pad = "px-[max(1rem,calc((100%-72rem)/2))]"
@@ -23,7 +23,18 @@ function ProjectCard({ p, index, onFocus }) {
       onFocus={onFocus}
     >
       <article className="h-full rounded-3xl border border-border bg-surface p-3 shadow-card transition-transform duration-300 group-focus-within:-translate-y-1 group-hover:-translate-y-1">
-        <ImagePlaceholder src={p.cover} alt={`${p.title} — portada (provisional)`} aspect="aspect-[4/3]" />
+        {p.cover ? (
+          p.behance ? (
+            // La imagen también lleva a Behance; con teclado se usa el enlace de texto
+            <a href={p.behance} target="_blank" rel="noreferrer" tabIndex={-1} className="block">
+              <ProjectImage src={p.cover.src} alt={t(p.cover.alt)} />
+            </a>
+          ) : (
+            <ProjectImage src={p.cover.src} alt={t(p.cover.alt)} />
+          )
+        ) : (
+          <ImagePlaceholder src={`/images/${p.slug}/portada.webp`} alt={`${p.title} — portada (provisional)`} aspect="aspect-[4/3]" />
+        )}
         <div className="p-3 pt-5">
           <div className="flex items-baseline justify-between gap-3">
             <h3 className="text-2xl">{p.title}</h3>
@@ -31,18 +42,17 @@ function ProjectCard({ p, index, onFocus }) {
           </div>
           <p className="mt-1 text-sm text-ink-soft">{[t(p.role), p.client, p.year].filter(Boolean).join(" · ")}</p>
           {p.summary && <p className="mt-3 line-clamp-3 text-ink-soft">{t(p.summary)}</p>}
-          <div className="mt-4 flex flex-wrap gap-x-5 text-sm font-semibold">
-            {p.kind === "case" && (
-              <Link to={`/proyectos/${p.slug}`} className="link-draw min-h-11 content-center">
-                {t(ui.projects.viewCase)} →
-              </Link>
-            )}
-            {p.behance && (
-              <a href={p.behance} target="_blank" rel="noreferrer" className="link-draw min-h-11 content-center text-ink-soft hover:text-ink">
-                Behance ↗
-              </a>
-            )}
-          </div>
+          {p.behance && (
+            <a
+              href={p.behance}
+              target="_blank"
+              rel="noreferrer"
+              aria-label={`${t(ui.projects.behance)}: ${p.title}`}
+              className="link-draw mt-4 inline-flex min-h-11 items-center text-sm font-semibold"
+            >
+              {t(ui.projects.behance)} ↗
+            </a>
+          )}
         </div>
       </article>
     </motion.li>
