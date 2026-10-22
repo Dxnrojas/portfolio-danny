@@ -1,0 +1,62 @@
+// Textos de interfaz (botones, títulos de sección, avisos).
+
+export const ui = {
+  skip: { es: "Saltar al contenido", en: "Skip to content" },
+  nav: {
+    projects: { es: "Proyectos", en: "Projects" },
+    process: { es: "Proceso", en: "Process" },
+    about: { es: "Sobre mí", en: "About" },
+    contact: { es: "Contacto", en: "Contact" },
+    cta: { es: "Hablemos", en: "Let's talk" },
+    switchTo: { es: "Ver en inglés", en: "Ver en español" },
+  },
+  hero: {
+    toProjects: { es: "Ver proyectos", en: "See projects" },
+    toContact: { es: "Contacto", en: "Contact" },
+    mapLabel: { es: "Mapa de afinidad", en: "Affinity map" },
+  },
+  sections: {
+    focus: { es: "Enfoque", en: "Focus" },
+    projects: { es: "Proyectos", en: "Projects" },
+    process: { es: "Proceso", en: "Process" },
+    about: { es: "Sobre mí", en: "About me" },
+    experience: { es: "Trayectoria", en: "Experience" },
+    work: { es: "Experiencia", en: "Work" },
+    other: { es: "Otras experiencias", en: "Other experience" },
+    education: { es: "Educación", en: "Education" },
+    contact: { es: "Contacto", en: "Contact" },
+  },
+  projects: {
+    list: { es: "Lista", en: "List" },
+    cards: { es: "Tarjetas", en: "Cards" },
+    viewCase: { es: "Ver caso", en: "View case" },
+    behance: { es: "Ver en Behance", en: "View on Behance" },
+  },
+  contact: {
+    copy: { es: "Copiar correo", en: "Copy email" },
+    copied: { es: "Correo copiado", en: "Email copied" },
+  },
+  footer: {
+    top: { es: "Volver arriba", en: "Back to top" },
+  },
+  caseStudy: {
+    back: { es: "Volver a proyectos", en: "Back to projects" },
+    role: { es: "Rol", en: "Role" },
+    year: { es: "Año", en: "Year" },
+    team: { es: "Equipo", en: "Team" },
+    tools: { es: "Herramientas", en: "Tools" },
+    client: { es: "Cliente", en: "Client" },
+    summary: { es: "Resumen", en: "Summary" },
+    context: { es: "Contexto y problema", en: "Context and problem" },
+    objectives: { es: "Objetivos", en: "Goals" },
+    roleTeam: { es: "Rol y equipo", en: "Role and team" },
+    research: { es: "Investigación", en: "Research" },
+    insights: { es: "Insights y definición", en: "Insights and definition" },
+    design: { es: "Ideación y diseño", en: "Ideation and design" },
+    validation: { es: "Validación y resultados", en: "Validation and results" },
+    learnings: { es: "Aprendizajes", en: "Learnings" },
+    next: { es: "Siguiente caso", en: "Next case" },
+    pending: { es: "Contenido pendiente", en: "Content pending" },
+  },
+  notFound: { es: "Esta página no existe.", en: "This page doesn't exist." },
+}

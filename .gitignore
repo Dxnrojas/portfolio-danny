@@ -1,0 +1,7 @@
+node_modules
+dist
+.vercel
+*.local
+.DS_Store
+# Nunca subir fuentes con licencia de prueba (TT Livret)
+*TT*Livret*

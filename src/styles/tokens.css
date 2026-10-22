@@ -1,0 +1,32 @@
+/* Tokens de Daniela. Única fuente de verdad para color, sombra y tipografía. */
+:root {
+  --canvas: #fbf4f4;
+  --surface: #ffffff;
+  --ink: #1d1d1d;
+  --ink-soft: #605e5e;
+  --rose: #cbabb6;
+  --sage: #859d7d;
+  --butter: #fff2ae;
+  --accent-deep: #966476;
+  --shadow-soft: 0 1px 2px rgba(29, 29, 29, 0.06), 0 12px 32px rgba(29, 29, 29, 0.08);
+
+  /* Si algún día hay licencia web de TT Livret, solo se cambia esta línea. */
+  --font-display: "Playfair Display", Georgia, serif;
+  --font-body: "Manrope Variable", system-ui, sans-serif;
+
+  /* Mapeo de variables shadcn que leen los componentes de Morph UI → tokens propios */
+  --radius: 1rem;
+  --background: var(--canvas);
+  --foreground: var(--ink);
+  --card: var(--surface);
+  --card-foreground: var(--ink);
+  --primary: var(--ink);
+  --primary-foreground: var(--surface);
+  --secondary: var(--canvas);
+  --secondary-foreground: var(--ink);
+  --muted: var(--canvas);
+  --muted-foreground: var(--ink-soft);
+  --border: color-mix(in oklab, var(--ink) 10%, transparent);
+  --input: color-mix(in oklab, var(--ink) 14%, transparent);
+  --ring: var(--ink);
+}
