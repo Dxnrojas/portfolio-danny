@@ -93,7 +93,7 @@ export default function CaseStudy() {
 
         <nav className="border-t border-border py-12">
           <p className="text-sm text-ink-soft">{t(L.next)}</p>
-          <Link to={`/proyectos/${next.slug}`} className="font-serif text-4xl underline-offset-4 hover:underline">
+          <Link to={`/proyectos/${next.slug}`} className="link-draw text-4xl font-semibold tracking-tight">
             {next.title} →
           </Link>
         </nav>

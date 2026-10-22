@@ -13,9 +13,10 @@ export const profile = {
     behance: "https://www.behance.net/danielarojasa19",
   },
   // Frase del hero. TODO: que Daniela apruebe la redacción final.
+  // Las palabras en accent se muestran en Playfair cursiva.
   headline: {
-    es: { before: "Diseño que empieza por", accent: "entender", after: "a las personas." },
-    en: { before: "Design that starts by", accent: "understanding", after: "people." },
+    es: { before: "Diseño que empieza por", accent: "entender", after: "a las personas" },
+    en: { before: "Design that starts by", accent: "understanding", after: "people" },
   },
   intro: {
     es: "Diseñadora UX/UI enfocada en investigación de usuarios, análisis de datos e insights. Busco práctica en UX/UI, con especial interés en banca y fintech.",
