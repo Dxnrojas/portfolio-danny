@@ -74,7 +74,13 @@ export const projects = [
       en: "A user experience strategy focused on building and measuring trust in an EdTech platform, driving digital skills learning across Latin America.",
     },
     behance: null, // TODO: enlace de Behance
-    cover: null, // TODO: imagen
+    cover: {
+      src: "/images/crack-the-code/portada.webp",
+      alt: {
+        es: "Portada de Crack The Code: niño sonriente con un lápiz, rodeado de íconos de código, gráficas y útiles escolares.",
+        en: "Crack The Code cover: smiling boy holding a pencil, surrounded by code, chart and school supply icons.",
+      },
+    },
   },
   {
     slug: "sizzle",
@@ -122,6 +128,12 @@ export const projects = [
       en: "Editorial design and art direction for Flash, a quarterly luxury magazine in print and digital formats focused on art and design. The project uses an urban collage aesthetic, developing unique visual identities and color palettes to explore the creative and cultural scene of three cities: Seoul, Lille and Valencia.",
     },
     behance: "https://www.behance.net/gallery/200457339/MAGAZINE-FLVSH",
-    cover: null, // TODO: imagen (Daniela la envía en el siguiente mensaje)
+    cover: {
+      src: "/images/magazine-flvsh/portada.webp",
+      alt: {
+        es: "Portada de MAGAZINE FLVSH: logotipo FLASH! en un globo de diálogo crema sobre fondo negro.",
+        en: "MAGAZINE FLVSH cover: FLASH! logo in a cream speech bubble on a black background.",
+      },
+    },
   },
 ]
